@@ -1,6 +1,6 @@
 package TicTacToe.Player;
 
-import TicTacToe.Grid.Cell;
+import TicTacToe.Grid.Square;
 import TicTacToe.Grid.Grid;
 import TicTacToe.SymbolType;
 import TicTacToe.strategy.IStrategy;
@@ -19,7 +19,7 @@ public class Player {
         return symbolType;
     }
 
-    public Cell doMove(Grid grid){
+    public Square doMove(Grid grid){
         return this.strategy.doMove(grid);
     }
 }

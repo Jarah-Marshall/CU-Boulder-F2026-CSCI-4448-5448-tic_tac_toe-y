@@ -1,9 +1,8 @@
 package TicTacToe.strategy;
 
-import TicTacToe.Grid.Cell;
 import TicTacToe.Grid.Grid;
-import TicTacToe.Player.Player;
+import TicTacToe.Grid.Square;
 
 public interface IStrategy {
-    Cell doMove(Grid grid);
+    Square doMove(Grid grid);
 }

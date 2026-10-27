@@ -4,7 +4,7 @@ import TicTacToe.SymbolType;
 
 import java.util.Optional;
 
-public class Cell {
+public class Square {
 
     private SymbolType symbolType;
 
@@ -13,10 +13,7 @@ public class Cell {
     }
 
     public void placeSymbol(SymbolType symbol){
-        if(symbol == null){
-            return;
-        }
-        if(!isEmpty()) {
+        if(symbol == null || !isEmpty()){
             return;
         }
         this.symbolType = symbol;
